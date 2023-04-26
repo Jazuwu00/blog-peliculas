@@ -1,0 +1,314 @@
+/* Estilos Generales */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+	background-color: #F7F7F7;
+	color: #ffffff;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: #444444;
+	text-decoration: none;
+}
+
+
+
+
+/* Estilos de la Barra de Navegación */
+
+
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	min-height: 70px;
+	background-color: #444444;
+	color: #CCCCCC;
+	margin: 0;
+	padding: 10px;
+	align-items: center;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.logo img {
+	margin-left: 30px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+ a{
+	color: #CCCCCC;
+}
+nav a{
+	font-weight: 300;
+	padding-right: 10px;
+}
+nav a:hover{
+	color: red;
+	cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	header{
+		flex-direction: column;
+	}
+	nav{
+		padding-top: 20px;
+	}
+	nav a {
+		padding: 10px 40px;
+	}
+}
+/* Estilos de la Sección de Reseñas */
+
+/* contenido*/
+
+.reseñas {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+main{
+	background-color: #b13d3d;
+}
+main h2{
+	text-align: center;
+	padding-top: 40px;
+	
+}
+
+
+.articulo{ 
+	width: 650px;
+	display: flex;
+	
+	margin: 0 40px;
+	margin-bottom: 30px;
+}
+
+
+.articulo h1{
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.articulo img {
+	height: 400px;
+	margin-right: 60px;
+	}
+	
+
+.articulo .texto{
+	width: 250px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.articulo a {
+	background-color: #505050;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+	}
+	
+
+	@media (max-width: 767px) {
+		.articulo img {
+			height: 300px;
+			padding-top: 20px;
+			margin: 0 10px;
+			}
+			.articulo{
+				padding: 0px;
+				margin-top: 20px;
+				
+			}
+			.articulo p{
+				font-size: 15px;
+			}
+			.articulo a {
+				padding: 10px 10px;
+				}
+				.articulo .texto{
+					text-align: center;
+					justify-content:space-between;
+				}
+				
+	}
+
+/* Estilos de la Sección de Noticias */
+
+
+
+
+
+h2 {
+text-align: center;
+margin-bottom: 50px;
+}
+
+
+
+
+
+.noticias .content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	height:200px;
+	width: 600px;
+	display: flex;
+	flex-direction: row;
+	
+	color: #000000;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	margin: 20px;
+	overflow: hidden;
+	
+	
+	
+  }
+  
+  .card img {
+	height:100%;
+	object-fit: cover;
+	width: 200px;
+  }
+
+  .card a{
+	text-align: center;
+	background-color: #505050;
+	color: #FFFFFF;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 100px;
+  }
+  
+  .card-content {
+	width: 300px;
+	margin: 0 auto;
+	padding: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+  }
+  
+  .card-content h2 {
+	font-size: 15px;
+	margin: 0;
+  }
+  
+ 
+  
+  
+  
+  
+  
+  
+
+
+/* Estilos del Pie de Página */
+
+footer {
+
+background-color: #444444;
+color: #FFFFFF;
+padding: 20px;
+}
+
+.redes {
+display: flex;
+justify-content: center;
+}
+
+.redes h3 {
+margin-right: 20px;
+}
+
+
+.derechos p {
+text-align: center;
+margin-top: 20px;
+font-size: 14px;
+}
+
+
+
+
+
+
+.redes i{ 
+	padding: 2px 20px;
+	color: #CCCCCC;
+}
+
+/* form contacto*/
+main .text {
+	padding: 50px;
+	text-align: center;
+}
+form {
+	margin: 0 auto;
+	height: 700px;
+	width: 50%;
+	padding: 40px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+	padding: 5px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
