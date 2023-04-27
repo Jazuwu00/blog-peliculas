@@ -17,7 +17,7 @@ ul {
 }
 
 a {
-	color: #444444;
+	
 	text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ nav a:hover{
 	
 }
 main{
-	background-color: #b13d3d;
+	background-color: #943939;
 }
 main h2{
 	text-align: center;
@@ -96,37 +96,53 @@ main h2{
 
 
 .articulo{ 
-	width: 650px;
-	display: flex;
-	
-	margin: 0 40px;
+	width: 270px;
+	background-color: #eed2d2;
+	padding: 1rem;
+	color: #000000;
+	margin: 20px 40px;
 	margin-bottom: 30px;
+	border-radius: 15px;
 }
 
 
 .articulo h1{
-	font-weight: 900;
+	font-weight: 600;
 	font-size: 30px;
+	margin-bottom: 10px;
+}
+.articulo p{
+	margin-bottom: 1.5rem;
 }
 
 .articulo img {
-	height: 400px;
-	margin-right: 60px;
+	height: 300px;
+	width: 100%;
+	
 	}
 	
 
 .articulo .texto{
-	width: 250px;
+	margin-top: 20px;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+	 
 	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	
 }
 
-.articulo a {
+.articulo .texto a span{
+	color: #8b1212;
+	
+}
+
+.articulo .buton {
+	
 	background-color: #505050;
 	color: #FFFFFF;
-	padding: 10px 20px;
+	padding: 10px 10px;
 	text-transform: uppercase;
 	font-weight: bold;
 	border-radius: 5px;
@@ -135,28 +151,39 @@ main h2{
 
 	@media (max-width: 767px) {
 		.articulo img {
-			height: 300px;
-			padding-top: 20px;
-			margin: 0 10px;
+			height: 200px;
+			
 			}
 			.articulo{
-				padding: 0px;
+				width: 270px;
+				
+				padding: 15px;
 				margin-top: 20px;
 				
 			}
 			.articulo p{
 				font-size: 15px;
 			}
-			.articulo a {
-				padding: 10px 10px;
+			.articulo .buton {
+	
+				padding: 5px 10px;
+				border-radius: 5px;
 				}
+
 				.articulo .texto{
+					margin-top: 20px;
 					text-align: center;
-					justify-content:space-between;
+					
 				}
 				
 	}
 
+a:hover{
+	color: #812a2a;
+}
+a i{
+margin-right: 3px;
+}
 /* Estilos de la Sección de Noticias */
 
 
@@ -171,7 +198,9 @@ margin-bottom: 50px;
 
 
 
-
+.noticias{
+	padding-bottom: 20px;
+}
 .noticias .content{
 	display: flex;
 	justify-content: center;
@@ -180,7 +209,7 @@ margin-bottom: 50px;
 
 .card {
 	height:200px;
-	width: 600px;
+	width: 500px;
 	display: flex;
 	flex-direction: row;
 	
@@ -188,7 +217,7 @@ margin-bottom: 50px;
 	background-color: rgb(255, 255, 255);
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	margin: 20px;
+	margin: 10px;
 	overflow: hidden;
 	
 	
@@ -196,12 +225,12 @@ margin-bottom: 50px;
   }
   
   .card img {
-	height:100%;
-	object-fit: cover;
+	height: 100%;
+	
 	width: 200px;
   }
 
-  .card a{
+  .card .buton{
 	text-align: center;
 	background-color: #505050;
 	color: #FFFFFF;
@@ -216,7 +245,7 @@ margin-bottom: 50px;
   .card-content {
 	width: 300px;
 	margin: 0 auto;
-	padding: 2px;
+	padding: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -273,6 +302,8 @@ font-size: 14px;
 }
 
 /* form contacto*/
+
+
 main .text {
 	padding: 50px;
 	text-align: center;
@@ -280,8 +311,9 @@ main .text {
 form {
 	margin: 0 auto;
 	height: 700px;
-	width: 50%;
-	padding: 40px;
+	width: 80%;
+	padding: 20%;
+	padding-top: 0;
 }
 
 label {
@@ -311,4 +343,110 @@ ul {
 
 li {
 	margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+	main .text {
+		padding-top: 40px;
+		text-align: center;
+	}
+	form {
+		margin: 0 auto;
+		height: 700px;
+		width: 100%;
+		padding: 20% ;
+		padding-top: 5%;
+	}
+	
+}
+
+/* rese;as pag */
+main .contenidoR{
+	position: relative;
+    display: inline-block;
+    
+}
+main .contenidoR img{
+		position: relative;
+		width: 100%;
+		overflow-y: hidden;
+}
+main .contenidoR .text h1{
+	margin-bottom: 30px;
+	font-weight: 900;
+	font-size: 4rem;
+}
+main .contenidoR .text{
+	font-size: 30px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .contenidoTexto{
+	text-align: justify;
+	padding: 15%;
+	padding-bottom:20px ;
+	padding-top: 2%;
+}
+main .contenidoTexto img{
+	margin:5%;
+	width: 90%;
+	height: 420px;
+	
+}
+
+main .contenidoTexto h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+hr{
+	width: 60%;
+	margin: auto;
+}
+@media (max-width: 967px) {
+	
+	main .contenidoR .text h1{
+		margin-bottom: 30px;
+		font-weight: 900;
+		font-size: 3rem;
+	}
+
+	main .contenidoTexto img{
+		margin:5%;
+		width: 90%;
+		height: 320px;
+	}		
+}
+@media (max-width: 767px) {
+	
+	main .contenidoR .text h1{
+		
+		font-size: 30px;
+	}
+	main .contenidoR .text{
+		font-size: 15px;
+		text-align: center;
+		position: absolute;
+		
+		transform: translate(-50%, -50%);
+	}
+
+	main .contenidoTexto img{
+		margin:5%;
+		width: 90%;
+		height: 220px;	
+	}		
+}
+
+.similares .content{
+	
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.similares{
+	padding-bottom: 40px;
 }
