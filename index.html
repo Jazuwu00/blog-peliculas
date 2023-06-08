@@ -7,7 +7,19 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="estilos.css">
-	
+	<style>
+		#clock {
+		  font-size: 48px;
+		  text-align: center;
+		  margin-top: 50px;
+		}
+		input {
+      margin-bottom: 10px;
+    }
+	#calculator {
+      display:none ;
+    }
+	  </style>
 </head>
 <body>
 	<header>
@@ -30,7 +42,7 @@
 			
 		
 			<div class="articulo">
-				<div class="imagen"><img src="peliculas\jojorabbit.jpg" alt="Imagen de Película 1"></div>
+				<div class="imagen"><img  id="myImage" src="peliculas\jojorabbit.jpg" onmouseover="changeImage('jojowallpaper2.jpg')" onmouseout="restoreImage('jojorabbit.jpg')" alt="Imagen de Película 1"></div>
 				<div class="texto"><h1>Jojo Rabbit</h1>
 					<p>Jojo "Rabbit" Betzler es un solitario niño alemán perteneciente a las Juventudes Hitlerianas que ve su mundo puesto patas arriba...<a href="/reseña.html"><span>Ver mas</span></a></p>
 					<div class="botones"><a href="https://www.primevideo.com/detail/Jojo-Rabbit/0N4QT7YOAY6ZCZSIQ7KOO25RCS/ref=atv_nb_lcl_es_ES?language=es_ES&ie=UTF8" class="buton" ><i class='fa fa-play'></i> Ver</a> <a href="#" class="buton"><i class='fa fa-heart'></i>  Me gusta</a></div></div>
@@ -56,8 +68,12 @@
 			
 		</section>
     
-	
+		<div id="clock"></div>
 		
+		<script src="script.js"></script>
+		
+		
+
 		
 		<section class="noticias">
 			<hr>
@@ -99,7 +115,21 @@
 			</div>
 			  
         </section>
+		<div class="calculadora">
+			<button onclick="toggleCalculator()" id="Calculadora">Calculadora</button>
+		<div id="calculator">
+			
+			<input type="number" id="num1" placeholder="Ingrese primer número">
+			<input type="number" id="num2" placeholder="Ingrese segundo número">
+			<button onclick="operate(1)">Sumar</button>
+			<button onclick="operate(2)">Restar</button>
+			<button onclick="operate(3)">Multiplicar</button>
+			<button onclick="operate(4)">Dividir</button>
+			<div id="result"></div>
+		</div>
+		</div>
         </main>
+		
         <footer>
           <div class="redes">
             <h3>Síguenos en:</h3>
