@@ -59,9 +59,10 @@ function updateClock() {
   }
   
 // cambiar imagen
-  function changeImage(newImage) {
+  function changeImage(myImage, imagen) {
     
-    document.getElementById('myImage').src = "/peliculas/"  + newImage ;
+    var cambio = document.getElementById(myImage) ;
+    cambio.src = "peliculas/" + imagen;
   }
   
   function restoreImage(originalImage) {
